@@ -13,7 +13,93 @@
 			<artifactId>avalon-framework</artifactId>
 			<version>4.1.3</version>
 		</dependency>
-		
+		<dependency>
+		    <groupId>commons-beanutils</groupId>
+		    <artifactId>commons-beanutils</artifactId>
+		    <version>1.7.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>commons-lang</groupId>
+		    <artifactId>commons-lang</artifactId>
+		    <version>2.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>commons-logging</groupId>
+		    <artifactId>commons-logging</artifactId>
+		    <version>1.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>dom4j</groupId>
+		    <artifactId>dom4j</artifactId>
+		    <version>1.6.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>net.sf.ezmorph</groupId>
+		    <artifactId>ezmorph</artifactId>
+		    <version>0.8.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>jaxen</groupId>
+		    <artifactId>jaxen</artifactId>
+		    <version>1.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>jdom</groupId>
+		    <artifactId>jdom</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>net.sf.json-lib</groupId>
+		    <artifactId>json-lib</artifactId>
+		    <version>0.8</version>
+		</dependency>
+		<dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <version>3.8.1</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>1.2.12</version>
+		</dependency>
+		<dependency>
+		    <groupId>logkit</groupId>
+		    <artifactId>logkit</artifactId>
+		    <version>1.0.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>servlet-api</artifactId>
+		    <version>2.3</version>
+		    <scope>provided</scope>
+		</dependency>
+		<!-- <dependency>
+		    <groupId>xalan</groupId>
+		    <artifactId>xalan</artifactId>
+		    <version>2.7.1</version>
+		</dependency> -->
+		<!-- <dependency>
+		    <groupId>xerces</groupId>
+		    <artifactId>xercesImpl</artifactId>
+		    <version>2.6.1</version>
+		</dependency> -->
+		<dependency>
+		    <groupId>xml-apis</groupId>
+		    <artifactId>xml-apis</artifactId>
+		    <version>1.0.b2</version>
+		</dependency>
+		<dependency>
+		    <groupId>xerces</groupId>
+		    <artifactId>xmlParserAPIs</artifactId>
+		    <version>2.6.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>xom</groupId>
+		    <artifactId>xom</artifactId>
+		    <version>1.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -24,6 +110,11 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<archive>
+						<manifest>
+							<mainClass>com.jsontocsv.Main</mainClass>
+						</manifest>
+					</archive>
 				</configuration>
 			</plugin>
 		</plugins>
