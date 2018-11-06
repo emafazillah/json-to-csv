@@ -1,3 +1,4 @@
+package com.jsontocsv;
 import com.jsontocsv.parser.JsonFlattener;
 import com.jsontocsv.writer.CSVWriter;
 
