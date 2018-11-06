@@ -65,7 +65,8 @@ public class JsonFlattener {
         }
     }
 
-    private void flatten(JSONObject obj, Map<String, String> flatJson, String prefix) {
+    @SuppressWarnings("rawtypes")
+	private void flatten(JSONObject obj, Map<String, String> flatJson, String prefix) {
         Iterator iterator = obj.keys();
         while (iterator.hasNext()) {
             String key = iterator.next().toString();
