@@ -15,110 +15,97 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>commons-beanutils</groupId>
-		    <artifactId>commons-beanutils</artifactId>
-		    <version>1.7.0</version>
-		    <scope>provided</scope>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.7.0</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>commons-lang</groupId>
-		    <artifactId>commons-lang</artifactId>
-		    <version>2.1</version>
-		    <scope>provided</scope>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>commons-logging</groupId>
-		    <artifactId>commons-logging</artifactId>
-		    <version>1.1</version>
-		    <scope>provided</scope>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>dom4j</groupId>
-		    <artifactId>dom4j</artifactId>
-		    <version>1.6.1</version>
-		    <scope>provided</scope>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>net.sf.ezmorph</groupId>
-		    <artifactId>ezmorph</artifactId>
-		    <version>0.8.1</version>
-		    <scope>provided</scope>
+			<groupId>net.sf.ezmorph</groupId>
+			<artifactId>ezmorph</artifactId>
+			<version>0.8.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>jaxen</groupId>
-		    <artifactId>jaxen</artifactId>
-		    <version>1.1</version>
-		    <scope>provided</scope>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+			<version>1.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>jdom</groupId>
-		    <artifactId>jdom</artifactId>
-		    <version>1.0</version>
-		    <scope>provided</scope>
+			<groupId>jdom</groupId>
+			<artifactId>jdom</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>net.sf.json-lib</groupId>
-		    <artifactId>json-lib</artifactId>
-		    <version>0.8</version>
-		    <scope>provided</scope>
+	        <groupId>net.sf.json-lib</groupId>
+	        <artifactId>json-lib</artifactId>
+	        <version>2.4</version>
+	        <classifier>jdk15</classifier>
+	    </dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
-		    <groupId>junit</groupId>
-		    <artifactId>junit</artifactId>
-		    <version>3.8.1</version>
-		    <scope>test</scope>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.12</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>log4j</groupId>
-		    <artifactId>log4j</artifactId>
-		    <version>1.2.12</version>
-		    <scope>provided</scope>
+			<groupId>logkit</groupId>
+			<artifactId>logkit</artifactId>
+			<version>1.0.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>logkit</groupId>
-		    <artifactId>logkit</artifactId>
-		    <version>1.0.1</version>
-		    <scope>provided</scope>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.3</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>javax.servlet</groupId>
-		    <artifactId>servlet-api</artifactId>
-		    <version>2.3</version>
-		    <scope>provided</scope>
-		</dependency>
-		<!-- <dependency>
-		    <groupId>xalan</groupId>
-		    <artifactId>xalan</artifactId>
-		    <version>2.7.1</version>
-		    <scope>provided</scope>
-		</dependency> -->
-		<!-- <dependency>
-		    <groupId>xerces</groupId>
-		    <artifactId>xercesImpl</artifactId>
-		    <version>2.6.1</version>
-		    <scope>provided</scope>
-		</dependency> -->
-		<dependency>
-		    <groupId>xml-apis</groupId>
-		    <artifactId>xml-apis</artifactId>
-		    <version>1.0.b2</version>
-		    <scope>provided</scope>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.0.b2</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>xerces</groupId>
-		    <artifactId>xmlParserAPIs</artifactId>
-		    <version>2.6.2</version>
-		    <scope>provided</scope>
+			<groupId>xerces</groupId>
+			<artifactId>xmlParserAPIs</artifactId>
+			<version>2.6.2</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>xom</groupId>
-		    <artifactId>xom</artifactId>
-		    <version>1.1</version>
-		    <scope>provided</scope>
+			<groupId>xom</groupId>
+			<artifactId>xom</artifactId>
+			<version>1.1</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
-		<!-- <sourceDirectory>src</sourceDirectory> -->
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -129,17 +116,26 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<!-- Build an executable JAR -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.4</version>
+				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<archive>
 						<manifest>
 							<mainClass>com.jsontocsv.Main</mainClass>
 						</manifest>
 					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
 				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id> <!-- this is used for inheritance merges -->
+						<phase>package</phase> <!-- bind to the packaging phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

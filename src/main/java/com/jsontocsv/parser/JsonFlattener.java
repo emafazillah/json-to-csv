@@ -15,7 +15,7 @@ public class JsonFlattener {
 
     public List<Map<String, String>> parse(JSONArray jsonArray) {
         List<Map<String, String>> flatJson = new ArrayList<Map<String, String>>();
-        int length = jsonArray.length();
+        int length = jsonArray.size();
         for (int i = 0; i < length; i++) {
             JSONObject jsonObject = jsonArray.getJSONObject(i);
             Map<String, String> stringMap = parse(jsonObject);
@@ -27,7 +27,7 @@ public class JsonFlattener {
     public List<Map<String, String>> parseJson(String json) throws Exception {
         List<Map<String, String>> flatJson = null;
         try {
-            JSONObject jsonObject = new JSONObject(json);
+            JSONObject jsonObject = JSONObject.fromObject(json);
             flatJson = new ArrayList<Map<String, String>>();
             flatJson.add(parse(jsonObject));
         } catch (JSONException je) {
@@ -39,7 +39,7 @@ public class JsonFlattener {
     private List<Map<String, String>> handleAsArray(String json) throws Exception {
         List<Map<String, String>> flatJson = null;
         try {
-            JSONArray jsonArray = new JSONArray(json);
+            JSONArray jsonArray = JSONArray.fromObject(json);
             flatJson = parse(jsonArray);
         } catch (Exception e) {
             throw new Exception("Json might be malformed");
@@ -48,11 +48,11 @@ public class JsonFlattener {
     }
 
     private void flatten(JSONArray obj, Map<String, String> flatJson, String prefix) {
-        int length = obj.length();
+        int length = obj.size();
         for (int i = 0; i < length; i++) {
             if (obj.get(i).getClass() == JSONArray.class) {
                 JSONArray jsonArray = (JSONArray) obj.get(i);
-                if (jsonArray.length() < 1) continue;
+                if (jsonArray.size() < 1) continue;
                 flatten(jsonArray, flatJson, prefix + i);
             } else if (obj.get(i).getClass() == JSONObject.class) {
                 JSONObject jsonObject = (JSONObject) obj.get(i);
@@ -75,7 +75,7 @@ public class JsonFlattener {
                 flatten(jsonObject, flatJson, prefix);
             } else if (obj.get(key).getClass() == JSONArray.class) {
                 JSONArray jsonArray = (JSONArray) obj.get(key);
-                if (jsonArray.length() < 1) continue;
+                if (jsonArray.size() < 1) continue;
                 flatten(jsonArray, flatJson, key);
             } else {
                 String value = obj.getString(key);
